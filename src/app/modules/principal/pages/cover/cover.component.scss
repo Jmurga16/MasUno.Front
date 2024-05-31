@@ -1,3 +1,7 @@
+.sub-cont {
+    padding-bottom: 2rem;
+}
+
 .bg-principal {
     background-color: #1a36a8;
     color           : white;
@@ -16,14 +20,15 @@
 }
 
 .text-mas {
-    font-size  : 2.5rem !important;
-    font-weight: 700 !important;
-    text-decoration: underline wavy red; /* Subrayado rojo ondulado */
+    font-size      : 2.5rem !important;
+    font-weight    : 700 !important;
+    text-decoration: underline wavy red;
+    /* Subrayado rojo ondulado */
 }
 
 .text-en {
-    font-size  : 1.8rem !important;
-    font-weight: 600 !important;
+    font-size   : 1.8rem !important;
+    font-weight : 600 !important;
     margin-right: 1rem;
 }
 
@@ -31,8 +36,8 @@
     font-weight: 800 !important;
 }
 
-.cupon{
+.cupon {
     background-color: white;
-    padding: 1rem;
-    width: 75%;
+    padding         : 1rem;
+    width           : 75%;
 }
