@@ -82,6 +82,10 @@ export class RegisterFormComponent {
       message = "Debe aceptar los términos y condiciones"
       valid = false;
     }
+    else if (!this.registerForm.valid) {
+      message = "Debe poner el formato correcto de los campos"
+      valid = false;
+    }
 
     if (!valid) {
       Swal.fire({ title: message, icon: "warning" })
