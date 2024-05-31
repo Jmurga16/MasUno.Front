@@ -1,0 +1,70 @@
+<div class="card text-bg-light mb-3 " style="width: 90%;border-radius: 2rem; margin-top:2rem">
+    <p class="title-complete  mt-4 " style="margin-left: 2rem ;     margin-bottom: 0;">
+        <label>Completa tus datos</label>
+
+    </p>
+    <img src="./../../../../assets/images/subline2.svg" width="300">
+
+
+    <div class="card-body" style="margin-left: 2rem; margin-right: 2rem;">
+        <form class="row g-3" [formGroup]="registerForm" autocomplete="off" novalidate>
+            <div class="col-md-6">
+                <label for="name" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese sus nombres"
+                    formControlName="name" required>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Ingrese sus apellidos"
+                    formControlName="lastname" required>
+            </div>
+            <div class="col-md-6">
+                <label for="cellphone" class="form-label">Teléfono celular</label>
+                <input type="text" class="form-control" id="cellphone" placeholder="Ingrese su número telefónico"
+                    formControlName="cellphone" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Correo electrónico" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico"
+                    formControlName="email" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Tus favoritos</label>
+                <select id="inputState" class="form-select" formControlName="favorite">
+                    <option *ngFor="let item of listFavorites" [value]="item.id">{{item.name}}</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="terms">
+                    <label class="form-check-label" for="gridCheck">
+                        Acepto los <a href="#">Términos y políticas privacidad</a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" formControlName="usedata">
+                    <label class="form-check-label" for="gridCheck2">
+                        Acepto el <a href="#">Uso de datos personales</a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary" (click)="onRegister()"
+                    style="width: 240px; height: 56px;">Registrarme</button>
+            </div>
+
+            <div class="col-12 text-center">
+                <label>Aprovecha las mejores ofertas y descuentos en pollo, pavo, cerdo, congelados, embutidos
+                    y mucho más. No te pierdas de nada estos Cyberdays registrándote y obteniendo grandes descuentos
+                    exclusivos.</label>
+            </div>
+        </form>
+    </div>
+</div>
