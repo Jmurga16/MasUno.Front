@@ -1,0 +1,49 @@
+.coupon {
+    border       : 6px dotted #1a36a8;
+    border-spacing: 3rem;
+    border-radius: 15px;    
+    background-color: white;
+    
+}
+
+.container {
+    padding         : 2px 20px;
+    background-color: #ffffff;
+}
+
+.subline-r{
+    text-decoration: underline wavy red; /* Subrayado rojo ondulado */    
+}
+
+.promo {
+    background: #ccc;
+    padding   : 3px;
+}
+
+.rose {
+    color: #ff0080;
+}
+
+.porcent {
+    color      : #ff0080;
+    font-size  : 10rem !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 5px rgb(255, 72, 0);
+}
+
+.first-buy {
+    color      : #1a36a8;
+    font-size  : 1.5rem !important;
+    font-weight: 400 !important;
+}
+
+.cyber-d {
+    color      : #ff0080;
+    font-size  : 1.6rem !important;
+    font-weight: 800 !important;
+}
+
+.foot {
+    color: #1a36a8;
+    text-align: center;
+}

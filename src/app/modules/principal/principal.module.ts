@@ -9,6 +9,7 @@ import { RegisterFormComponent } from './common/components/register-form/registe
 import { StepDiscountComponent } from './common/components/step-discount/step-discount.component';
 import { SliderTechnologiesComponent } from './common/components/slider-technologies/slider-technologies.component';
 import { PrincipalComponent } from './principal.component';
+import { CouponComponent } from './common/components/coupon/coupon.component';
 
 
 const ANGULAR_MODULES = [
@@ -28,7 +29,8 @@ const ANGULAR_MODULES = [
     TechnologiesComponent,
     RegisterFormComponent,
     StepDiscountComponent,
-    SliderTechnologiesComponent
+    SliderTechnologiesComponent,
+    CouponComponent
   ],
   imports: [
     ANGULAR_MODULES,
