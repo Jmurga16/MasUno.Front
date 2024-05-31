@@ -9,6 +9,7 @@ import { PhpComponent } from './pages/php/php.component';
 import { PythonComponent } from './pages/python/python.component';
 import { DesignComponent } from './pages/design/design.component';
 import { InternaComponent } from './interna.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 const ANGULAR_MODULES = [
@@ -26,10 +27,12 @@ const ANGULAR_MODULES = [
     GalleryComponent,
     PhpComponent,
     PythonComponent,
-    DesignComponent
+    DesignComponent,
   ],
   imports: [
     ANGULAR_MODULES,
+    NgbCarouselModule
+
   ]
 })
 export class InternaModule { }

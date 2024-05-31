@@ -10,6 +10,7 @@ import { StepDiscountComponent } from './common/components/step-discount/step-di
 import { SliderTechnologiesComponent } from './common/components/slider-technologies/slider-technologies.component';
 import { PrincipalComponent } from './principal.component';
 import { CouponComponent } from './common/components/coupon/coupon.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 const ANGULAR_MODULES = [
@@ -21,8 +22,6 @@ const ANGULAR_MODULES = [
 
 @NgModule({
   declarations: [
-
-
     CoverComponent,
     PrincipalComponent,
     DiscountComponent,
@@ -34,6 +33,7 @@ const ANGULAR_MODULES = [
   ],
   imports: [
     ANGULAR_MODULES,
+    NgbCarouselModule
   ]
 })
 export class PrincipalModule { }
