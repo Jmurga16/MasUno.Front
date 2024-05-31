@@ -1,0 +1,31 @@
+.main-footer {
+    background-color: #1a36a8;
+}
+
+.logo-social {
+    background-color: white !important;
+    color: #1a36a8;
+
+    border-radius: 2rem;
+    width        : 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .fs-md-5 {
+        font-size: 1.25rem !important;
+    }
+
+    .book {
+        margin-left: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fs-xl-6 {
+        font-size: 1rem !important;
+    }
+
+    .book {
+        margin-left: 2rem;
+    }
+}
